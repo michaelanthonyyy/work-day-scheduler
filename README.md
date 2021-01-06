@@ -7,7 +7,7 @@ He wants to add events to each hour of the day so he can efficiently make use of
 <br>
 
 ## Site Picture
-![Site](Assets/homepage.png)
+![Site](Assets/screenshot.png)
 
 <br>
 <br>
