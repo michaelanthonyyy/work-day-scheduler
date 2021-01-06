@@ -1,0 +1,20 @@
+button {
+    background-color: turquoise;
+}
+
+.now {
+    background-color: red;
+}
+
+.past {
+    background-color: darkgray;
+}
+
+
+.future {
+    background-color: limegreen;
+}
+
+textarea {
+    resize: none;
+}
