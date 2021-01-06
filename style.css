@@ -14,3 +14,7 @@ button {
 .future {
     background-color: limegreen;
 }
+
+textarea {
+    resize: none;
+}
