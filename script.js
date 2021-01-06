@@ -20,11 +20,12 @@ $("button").click(function () {
     var value = $(this).siblings(".textentry").val();
     var key = $(this).siblings(".time").text();
     localStorage.setItem(key, value);
-    // console.log(key);
-    // console.log(value);
+    console.log(key);
+    console.log(value);
 })
 
 // track current hours, past hours, and later hours 
+// nested currentTime syntax from moment.js docs
 // past hours boxes darkened, current hour changed to red, future hours lime green
 function comparisonTime() {
     var currentTime = moment().hour();
@@ -39,7 +40,9 @@ function comparisonTime() {
         }
         else {
             $(this).addClass("future");
+
         }
     })
 
 }
+
