@@ -26,8 +26,20 @@ $("button").click(function () {
 
 // track current hours, past hours, and later hours 
 // past hours boxes darkened, current hour changed to red, future hours lime green
+function comparisonTime() {
+    var currentTime = moment().hour();
+    console.log(currentTime);
+    $(".row").each(function () {
+        var time = parseInt($(this).attr("data-value")[1]);
+        if (currentTime === time) {
+            $(this).addClass("now");
+        }
+        else if (currentTime < time) {
+            $(this).addClass("past");
+        }
+        else {
+            $(this).addClass("future");
+        }
+    })
 
-
-
-
-
+}
